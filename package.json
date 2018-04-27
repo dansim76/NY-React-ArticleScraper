@@ -1,0 +1,25 @@
+{
+  "name": "NY-React-ArticleScraper",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dansim76/NY-React-ArticleScraper.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dansim76/NY-React-ArticleScraper/issues"
+  },
+  "homepage": "https://github.com/dansim76/NY-React-ArticleScraper#readme",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "body-parser": "^1.18.2"
+  }
+}
