@@ -7,7 +7,6 @@ var ArticlesSchema = new Schema({
         type: String,
         required: false
     },
-  
     link:{
         type: String,
         required: false
@@ -20,18 +19,8 @@ var ArticlesSchema = new Schema({
     issaved: {
         type:Boolean,
         default: false
-    },
-    status: {
-        type: String,
-        default: "Save Article"
-    },
-    created: {
-        type: Date,
-        default: Date.now
-    },
-    note:{
-        type: Schema.Types.ObjectId,
-        ref:"Note"
+    }
+   
     }
     
     
