@@ -16,27 +16,18 @@ componentDidMount(){
 this.getSavedArticles()
 }
 getSavedArticles = () => {
-    API.getARticle()
+    API.getArticle()
     .then((res) =>{
         this.setState({saved: res.data})
     })
 
 }
-getSavedArticles = () => {
-    API.getARticle()
-    .then((res) =>{
-        this.setState({saved: res.data})
-    })
 
-}
 render(){
     return(
         <div className ="container">
             < Nav />
-
             <SavedArticles />
-
-
         </div>
     )
 }

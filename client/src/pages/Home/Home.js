@@ -30,6 +30,14 @@ class Home extends Component {
         })
         
     }
+    handleSaveButton = (id) => {
+    const findArticleByID = this.state.articles.find((el) => el._id === id);
+    console.log("findArticleByID: ", findArticleByID);
+    const newSave = {title: findArticleByID.headline.main, date: findArticleByID.pub_date, url: findArticleByID.web_url};
+    API.saveArticle(newSave)
+    .then(this.getSavedArticles());
+  }
+
     
     renderArticles = () => {
         return this.state.articles.map(article => (
@@ -103,9 +111,7 @@ class Home extends Component {
             handleFormSubmit={this.handleFormSubmit}
             renderArticles={this.renderArticles}
             />
-            <Results
-            
-            />
+      
             
             <SavedArticles 
             
